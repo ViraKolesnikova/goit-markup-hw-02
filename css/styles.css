@@ -2,6 +2,7 @@
 /*цвет заголовков #212121*/
 /*белый #FFFFFF*/
 /*акцент #2196F3*/
+/*основной цвет фона #FFFFFF*/
 /*вторичный цвет фона #F5F4FA*/
 /*фон героя и футера #2F303A*/
 /*цвет части логотипа #000000*/
@@ -12,6 +13,7 @@
     --title-color: #212121;
     --white-color: #FFFFFF;
     --accent: #2196F3;
+    --main-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     --hero-footer-background: #2F303A;
     --second-part-of-logo: #000000;
@@ -19,7 +21,7 @@
 }
 
 body {
-    background-color: var(--white-color);
+    background-color: var(--main-background-color);
     color: var(--primery-text-color);
     font-family: Roboto, sans-serif; 
     letter-spacing: 0.03em;  
@@ -89,14 +91,16 @@ ul {
     text-transform: uppercase;    
 }
 
-.button {
+.oder-button {
     color: var(--white-color);
     background-color: var(--accent);
+    font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 /*Особенности оказания услуг*/
@@ -150,7 +154,7 @@ footer {
     line-height: 1.19;
 }
 
-.address {
+.webstudio-address {
     color: var(--white-color);
     font-style: normal;
     font-size: 14px;
@@ -161,3 +165,37 @@ footer {
     color: var(--phone-mail-in-footer);
     text-decoration: none;
 }
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent);
+}
+
+.filtr-button {
+    color: var(--title-color);
+    background-color: var(--secondary-background-color);
+    font-family: inherit; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+}
+
+.filtr-button:hover, 
+.filtr-button:focus {
+    color: var(--white-color);
+    background-color: var(--accent);
+}
+
+.gallery-title {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.item-discription {
+    font-size: 16px;
+    line-height: 1.87;
+}
+
