@@ -17,7 +17,7 @@
     --secondary-background-color: #F5F4FA;
     --hero-footer-background: #2F303A;
     --second-part-of-logo: #000000;
-    --phone-mail-in-footer: rgba(255, 255, 255, 0,6);
+    --phone-mail-in-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -31,13 +31,16 @@ ul {
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 
 /*Стилизация шапки*/
 .logo {
     color: var(--second-part-of-logo);
     font-family: Raleway, sans-serif;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
@@ -48,7 +51,6 @@ ul {
 
 .navigation a {
     color: var(--title-color);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -66,7 +68,6 @@ ul {
 
 .contact-link {
     color: var(--primery-text-color);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -95,7 +96,7 @@ ul {
     color: var(--white-color);
     background-color: var(--accent);
     font-family: inherit;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
@@ -106,7 +107,7 @@ ul {
 /*Особенности оказания услуг*/
 .features-title {
     color: var(--title-color);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -119,7 +120,7 @@ ul {
 
 .section-title {
     color: var(--title-color);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -147,11 +148,6 @@ footer {
 
 .logo-footer {
     color: var(--white-color);
-    font-family: Raleway, sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
 }
 
 .webstudio-address {
@@ -163,7 +159,6 @@ footer {
 
 .footer-contacts {
     color: var(--phone-mail-in-footer);
-    text-decoration: none;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -188,13 +183,14 @@ footer {
 
 .gallery-title {
     color: var(--title-color);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .item-discription {
+    color: var(--primery-text-color);
     font-size: 16px;
     line-height: 1.87;
 }
